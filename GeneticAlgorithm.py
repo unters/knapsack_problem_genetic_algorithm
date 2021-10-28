@@ -29,11 +29,6 @@ class GeneticAlgorithm:
 
     POPULATION_SIZE = 20
     POPULATIONS_LIMIT = 100
-    # Before adding offspring to resulting population we will save it to a
-    # separate list to perform mutation
-    offspring_list = list()
-    population = list()
-
     CHROMOSOME_MUTATION_PROBABILITY = 0.3
     GENE_MUTATION_PROBABILITY = 0.1
     CHROMOSOME_SIZE = None
@@ -43,6 +38,10 @@ class GeneticAlgorithm:
     KNAPSACK_CAPACITY = 50
     ITEMS_SET_FILE = 'res/items.csv'
 
+    # Before adding offspring to resulting population we will save it to a
+    # separate list to perform mutation
+    offspring_list = list()
+    population = list()
     # A sorted by name list of items to put into a knapsack
     # (element = (name, volume, value))
     items_list = list()
